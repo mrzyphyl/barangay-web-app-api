@@ -7,7 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="NewFolder\" />
+    <Compile Remove="Properties\NewFolder\**" />
+    <Content Remove="Properties\NewFolder\**" />
+    <EmbeddedResource Remove="Properties\NewFolder\**" />
+    <None Remove="Properties\NewFolder\**" />
+    <_WebToolingArtifacts Remove="Properties\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Areas\Main\User\Login.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AccountData\" />
+    <Folder Include="Areas\Main\Home\" />
   </ItemGroup>
 
 </Project>
